@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>정보 | 마포 셔츠룸 서버 웜업</title>
+    <meta name="description" content="마포 셔츠룸 서버 웜업의 상세 정보. 비대칭 디자인, 타협 없는 룰, 그리고 진짜 웜업의 기준을 제시합니다. 예약 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸, 서버 웜업 정보, 마포 셔츠룸 위치, 웜업 룰, 마포 서버, 셔츠룸 상세">
+    <link rel="canonical" href="https://sf-t3-1779642675702-118.pages.dev/info">
+    <meta property="og:title" content="정보 | 마포 셔츠룸 서버 웜업 - 규칙을 깨는 기준">
+    <meta property="og:description" content="마포 셔츠룸 서버 웜업의 상세 정보. 대담한 디자인, 비대칭의 미학, 그리고 당신을 위한 새로운 기준을 확인하세요.">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --accent: #ff0055;
+            --accent2: #00ffcc;
+            --border: #2a2a2a;
+            --card-bg: #111;
+            --header-bg: #0a0a0acc;
+            --nav-active: #ff0055;
+            --font: 'Courier New', 'Nanum Gothic', monospace;
+            --space: 2rem;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: var(--accent2);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent2);
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            text-shadow: 2px 2px 0 var(--accent2);
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid var(--accent);
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        .accent {
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .small {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            letter-spacing: 0.05em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section-pad {
+            padding: 4rem 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--header-bg);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0.8rem 0;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            color: var(--text);
+            border-bottom: none;
+        }
+        .logo span {
+            color: var(--accent);
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-size: 1.5rem;
+            padding: 0.3rem 0.6rem;
+            cursor: pointer;
+        }
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        nav ul li a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: none;
+            padding: 0.2rem 0.4rem;
+            transition: background 0.2s;
+        }
+        nav ul li a:hover,
+        nav ul li a[aria-current="page"] {
+            background: var(--accent);
+            color: var(--bg);
+        }
+        .tel-link {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg) !important;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-bottom: none !important;
+            font-size: 1rem;
+        }
+        .tel-link:hover {
+            background: var(--accent2);
+            color: #000 !important;
+        }
+        main {
+            flex: 1;
+            padding-top: 80px;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .info-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+        .info-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .info-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent2);
+        }
+        .faq-item p {
+            margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: var(--header-bg);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+                border-bottom: 1px solid var(--border);
+            }
+            nav ul.open {
+                display: flex;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/" class="logo">서버<span>웜업</span></a>
+            <button class="nav-toggle" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" aria-current="page">정보</a></li>
+                    <li><a href="/gallery">갤러리</a></li>
+                    <li><a href="/review">리뷰</a></li>
+                    <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-pad">
+            <div class="container">
+                <p class="small" style="margin-bottom: 0.5rem;">마포 셔츠룸 · 서버 웜업</p>
+                <h1>정보<br>당신이 알아야 할 것</h1>
+                <p>마포에서 가장 타협 없는 서버 웜업 셔츠룸. 우리는 규칙을 깨고, 비대칭의 미학을 찬양합니다. 여기 진짜 정보를 공개한다. <span class="accent">읽고 결정하라.</span></p>
+            </div>
+        </section>
+
+        <section class="section-pad" style="border-top: 1px solid var(--border);">
+            <div class="container">
+                <h2>상세 정보</h2>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <span class="icon">📍</span>
+                        <h3>위치 &amp; 접근성</h3>
+                        <p>서울 마포구 홍대입구역 3번 출구에서 도보 3분. 지하철, 버스 모두 편리하다. 하지만 진짜는 찾는 자만이 알게 된다. <strong>정확한 주소는 전화 예약 시 안내.</strong></p>
+                        <p class="small">주차: 인근 공영주차장 이용 (유료)</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="icon">⏰</span>
+                        <h3>운영 시간</h3>
+                        <p>매일 14:00 - 04:00 (연중무휴)<br>단, <span class="accent">예약 우선</span>. 워크인은 상황에 따라 제한될 수 있다. 새벽 시간은 사전 문의 필수.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="icon">💎</span>
+                        <h3>시스템 &amp; 룰</h3>
+                        <p>우리는 표준을 따르지 않는다. <strong>비대칭 디자인</strong>, <strong>개인화된 웜업 시퀀스</strong>. 기본 룰: 존중, 청결, 자유. 더 자세한 내용은 현장에서 직접 체험하길 권한다.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="icon">👔</span>
+                        <h3>드레스 코드</h3>
+                        <p>셔츠 필수 (대여 가능). 그러나 <span class="accent">정장 풀셋은 환영하지 않는다</span>. 편안하면서도 자신만의 스타일을 입어라. 넥타이는 선택, 개성은 필수.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad" style="border-top: 1px solid var(--border);">
+            <div class="container">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h4>Q: 예약은 어떻게 하나요?</h4>
+                    <p>전화 010-6279-0862로 직접 연락. 문자나 카톡도 가능하나 <strong>전화가 가장 빠르다</strong>. 예약 시 원하는 시간과 인원을 말하면 된다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 초보자도 이용 가능한가요?</h4>
+                    <p>물론이다. 오히려 환영한다. 우리 스태프가 친절하게 안내한다. 단, <span class="accent">"모르니까 가르쳐 줘"</span> 마인드는 환영하지 않는다. 함께 만들어가는 경험이다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 가격대를 알려주세요.</h4>
+                    <p>기본 1시간 10만원부터. 시간당, 옵션에 따라 변동. <strong>정확한 견적은 예약 시 안내</strong>. 우리는 투명하게 운영한다 — 숨은 비용은 없다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 단체 이용이 가능한가요?</h4>
+                    <p>2인 이상은 사전 협의 필요. 최대 6인까지 수용 가능. 단체는 <span class="accent">룰을 더 엄격히 적용</span>한다. 예약 시 반드시 알려라.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 셔츠 대여는 어떤 종류가 있나요?</h4>
+                    <p>기본 화이트, 블랙 외에 비대칭 디자인 셔츠 3종. 추가 요금 2만원. 직접 입어보고 선택 가능하다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <h2>마포 셔츠룸의 기준</h2>
+                <p>우리는 타협하지 않는다. 매일 <span class="accent">서버 웜업</span>의 진정한 의미를 증명한다. 당신이 찾던 마포 셔츠룸이 여기 있다. <br>지금 010-6279-0862로 예약하라. 규칙을 깨는 경험이 기다린다.</p>
+                <a href="tel:01062790862" class="tel-link" style="display: inline-block; margin-top: 1.5rem; font-size: 1.2rem; padding: 1rem 2rem;">바로 전화 걸기</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 서버웜업 · 마포 셔츠룸 · All rights fucked.</p>
+            <p class="small">대담함은 선택이 아니라 필수다. | <a href="tel:01062790862">010-6279-0862</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // 모바일 네비게이션 토글
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            this.nextElementSibling.querySelector('ul').classList.toggle('open');
+        });
+        // 외부 클릭 시 닫기
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('header')) {
+                document.querySelector('nav ul').classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
